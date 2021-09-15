@@ -1,0 +1,25 @@
+
+<div class="feedHeader">
+	[[avatars]]
+	<div class="articleTitle">
+		<h1>[[title]]</h1>
+	</div>
+	<div>[[feedlink]]</div>
+	<div>[[byline]]</div>
+</div>
+<hr  />
+<article>
+<div id="bodyContainer" class="articleBody [[text_size_class]]">[[body]]</div>
+<div class="[[dateline_style]]">[[date_medium]]</div>
+<div class="externalLink">
+	<span>[[external_link]]</span>
+</div>
+</article>
+<script type="text/javascript">
+	let externalLinkElement = document.body.getElementsByClassName('externalLink')[0].querySelectorAll('span a')[0];
+	if (externalLinkElement) {
+		let host = externalLinkElement.hostname;
+		externalLinkElement.innerHTML = host;
+	}
+</script>
+
