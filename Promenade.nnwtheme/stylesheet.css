@@ -18,6 +18,12 @@ body {
 	padding-bottom: 1em;
 }
 
+.svg-inline--fa {
+	height: 1em;
+	width: 1em;
+	vertical-align: middle;
+}
+
 a {
 	text-decoration: none;
 	font-weight: bold;
